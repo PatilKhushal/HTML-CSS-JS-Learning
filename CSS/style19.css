@@ -1,0 +1,61 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #DFF8EB;
+}
+
+.container
+{
+    background-color: #CDCDCD;
+    margin: 20px auto;
+
+}
+
+h1
+{
+    color:#364156;
+}
+.items
+{
+    display: inline-block;
+    width : 24.8%;
+    height : 300px;
+    border : 2px solid #214E34;
+    margin : 10px 0;
+}
+
+#item3
+{
+    position: relative;
+    left: 122px;
+}
+
+#item7
+{
+    position: absolute;
+    left: 122px;
+}
+
+#item11
+{
+    position: fixed;
+    top : 50%;
+    left: 10px;
+    translate: 0 -50%;
+}
+
+#item15
+{
+    position: sticky;
+    top: 0px;
+    left: 10px;
+}
+
+#sticky
+{
+    height : 1500px;
+}

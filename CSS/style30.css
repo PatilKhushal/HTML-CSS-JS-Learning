@@ -1,0 +1,460 @@
+:root {
+  --navWidth: 70%;
+  --navLeftWidth: 7%;
+  --navLeftImageWidth: 100%;
+  --navRightWidth: 60%;
+  --navMidWidth: max-content;
+  --headerRightWidth: 25%;
+  --sectionHeight:70vh;
+  --bodyBeforeHeight:79%;
+  --sectiongroupWidth: 50%;
+  --cardGrpWidth: 25%;
+  --sectionDivWidth: 100%;
+  --formGrpWidth: 30%;
+  --typewriterWidth : 70%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  margin: 0;
+  background-color: black;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  background: url(Project3/bg.jpg) no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--bodyBeforeHeight);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Utility Class */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+input[type]::placeholder {
+  color: rgba(255, 255, 255, 0.507);
+}
+
+option
+{
+  color: rgba(255, 255, 255, 0.507);
+  background-color: rgba(0, 0, 0);
+}
+
+input
+{
+  outline: none;
+}
+
+/* header */
+header {
+  position: sticky;
+  justify-content: space-between;
+  top: 0;
+  z-index: 1;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.521);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Navbar : header left */
+nav {
+  width: var(--navWidth);
+  justify-content: space-evenly;
+}
+
+/* Navbar Left */
+nav > .left {
+  width: var(--navLeftWidth);
+}
+nav > .left > img {
+  width: var(--navLeftImageWidth);
+}
+
+/* Navbar Mid*/
+.mid {
+  width: var(--navMidWidth);
+}
+.mid>input {
+  border-radius: 20px;
+  border: none;
+  padding: 8px 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  width: 100%;
+}
+
+/* Navbar Right */
+nav > .right {
+  width: var(--navRightWidth);
+  
+}
+
+/* Unordered List */
+
+ul {
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+/* List Item */
+li {
+  list-style: none;
+}
+
+/* Anchor */
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #dedbd8;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #efa00b;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* header right */
+header > .right {
+  width: var(--headerRightWidth);
+  justify-content: space-evenly;
+}
+
+/* header right button */
+header > .right button {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #591f0a;
+  transition: all 0.5s;
+}
+
+header > .right button:hover {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: #591f0a;
+}
+
+/* Section */
+.section {
+  flex-direction: column;
+  justify-content :space-evenly;
+  padding: 0;
+  height: var(--sectionHeight);
+  position: relative;
+}
+
+/* Section-grp */
+.section-group {
+  width: var(--sectiongroupWidth);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+section button {
+  border: none;
+  color: brown;
+  width: calc(var(--headerRightWidth) - 10%);
+  background-color: white;
+  border-radius: 20px;
+  font-size: 1.2em;
+  padding: 0;
+}
+
+section button a 
+{
+  display: block;
+  border-radius: 20px;
+  transition: all 0.5s;
+  color: brown;
+  font-size: 100%;
+  padding: 10px 0px;
+  text-decoration: none;
+  width: 100%;
+}
+section a:hover {
+  background-color: brown;
+  color: white;
+}
+
+.section-group h1 {
+  font-size: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 10px;
+  animation: typewriter 3s steps(30), blink 0.75s infinite;
+}
+
+/* section2 */
+.section2 {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+.section2 > h1 {
+  font-size: 2rem;
+}
+
+/* card */
+.card {
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* card grp */
+.card-grp {
+  flex-direction: column;
+  width: var(--cardGrpWidth);
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-grp > div {
+  overflow: hidden;
+}
+
+.card-grp > div img {
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  width: 100%;
+  transition: all 1s;
+  /* position: relative; */
+}
+
+.card-grp > div img:hover {
+  transform: scale(1.2);
+  /* z-index: 2; */
+}
+
+.card-grp > h1 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* section3 */
+
+/* section3 form */
+.section3 form {
+  width: 100%;
+  flex-direction: column;
+}
+
+/* form group */
+.form-grp {
+  width: var(--formGrpWidth);
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+}
+
+/* section3 input */
+.section3 input, select{
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.radio
+{
+  justify-content: space-evenly;
+}
+
+.radio>div
+{
+  flex-wrap: nowrap;
+}
+
+/* Animations */
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: var(--typewriterWidth);
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-right: 3px solid transparent;
+  }
+  50% {
+    border-right: 3px solid #efa00b;
+  }
+}
+
+/* Media Query for small laptops an tabs */
+@media (min-width:680px) and (max-width:1100px) 
+{
+  :root
+  {
+    --navWidth: 60%;
+    --navRightWidth: 100%;
+    --navLeftWidth: 15%;
+    --navMidWidth: 50%;
+    --headerRightWidth: 40%;
+    --sectiongroupWidth: 100%;
+    --sectionHeight:70vh;
+    --bodyBeforeHeight : 92%;
+    --formGrpWidth: 50%;
+    --typewriterWidth:78%
+  }
+}
+
+/* Media Query for large mobiles and ipad */
+@media (min-width:480px) and (max-width:679px) 
+{
+  :root
+  {
+    --cardGrpWidth: 50%;
+    --navWidth: 100%;
+    --navLeftWidth: 20%;
+    --navRightWidth: 100%;
+    --navMidWidth: 60%;
+    --headerRightWidth: 100%;
+    --sectionHeight:70vh;
+    --bodyBeforeHeight:100%;
+    --sectiongroupWidth: 100%;
+    --formGrpWidth: 70%;
+    --typewriterWidth:100%
+  }
+
+  
+  header.flex
+  {
+    flex-direction: column;
+  }
+
+  .card
+  {
+    flex-direction: column;
+  }
+  
+  .section-group h1 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+}
+
+/* Media Query for medium mobiles */
+@media (min-width:360px) and (max-width:479px) 
+{
+  html
+  {
+    font-size: 12px;
+  }
+  :root
+  {
+    --cardGrpWidth: 50%;
+    --navWidth: 100%;
+    --navLeftWidth: 20%;
+    --navRightWidth: 100%;
+    --navMidWidth: 60%;
+    --headerRightWidth: 100%;
+    --sectionHeight:70vh;
+    --bodyBeforeHeight:100%;
+    --sectiongroupWidth: 100%;
+    --formGrpWidth: 70%;
+    --typewriterWidth:100%
+  }
+
+  
+  header.flex
+  {
+    flex-direction: column;
+  }
+
+  .card
+  {
+    flex-direction: column;
+  }
+  
+  .section-group h1 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+}
+
+/* Media Query for small mobiles*/
+@media (max-width:359px) 
+{
+  html
+  {
+    font-size: 10px;
+  }
+  :root
+  {
+    --cardGrpWidth: 50%;
+    --navWidth: 100%;
+    --navLeftWidth: 20%;
+    --navRightWidth: 100%;
+    --navMidWidth: 60%;
+    --headerRightWidth: 100%;
+    --sectionHeight:70vh;
+    --bodyBeforeHeight:100%;
+    --sectiongroupWidth: 100%;
+    --formGrpWidth: 70%;
+    --typewriterWidth:100%
+  }
+
+  
+  header.flex
+  {
+    flex-direction: column;
+  }
+
+  .card
+  {
+    flex-direction: column;
+  }
+  
+  .section-group h1 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+}

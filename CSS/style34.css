@@ -1,0 +1,28 @@
+*
+{
+    
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    justify-content: center;
+    text-align: center;
+    /* height: 50vh; */
+    /* overflow: scroll; */
+}
+
+.child
+{
+    border: 2px solid blue;
+}

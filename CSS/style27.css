@@ -1,0 +1,38 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+}
+
+.container
+{
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-around;
+    align-content: space-around;   
+    flex-wrap: wrap;
+    height: 500px;
+}
+
+.item
+{
+    width:300px;
+    border: 2px solid green;
+    text-align: center;
+    height:50px;
+    overflow: hidden;
+    box-shadow: 12px 12px 10px green ;
+}
+
+a
+{
+    display: block;
+    color:  #F18F01;
+    text-decoration: none;
+    font-size: 2em;
+    text-shadow: 3px 1px 5px black;
+}

@@ -1,0 +1,26 @@
+body
+{
+    background-color: #F0A202;
+}
+
+div
+{
+    border-color: #D95D39;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 200px;
+    overflow: hidden;
+    font-family: cursive;
+}
+
+.backgroundImage
+{
+    height: 500px;
+    background-color: #0E1428;
+    background-image: url("desktop-1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border: none;
+    border-radius: 0;
+}

@@ -1,0 +1,49 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #69140E;
+    margin: 0;
+}
+
+.container
+{
+    width: 100%;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: row;     /* default */
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.items  
+{
+    
+    /* flex-basis: 400px;    controls height when flex direction is column and controls width when flex directions is row */
+    flex-basis: 400px;
+    border: 2px solid green;
+    margin: 1%;
+    height: 80px;
+}
+
+#item1
+{
+    order: 1;
+    /* due to this item1 will go to end */
+}
+
+#item3
+{
+    flex-grow: 2;
+}
+
+#item1
+{
+    flex-shrink: 5;  /* not useful when wrap is on */
+    
+}

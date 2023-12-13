@@ -1,0 +1,41 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    margin: 0;
+}
+
+.container
+{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: black;
+}
+
+.img-group
+{   
+    display: flex;
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    border: 2px solid blue;
+}
+
+img
+{
+    transition: all .5s;
+    width: 100%;
+}
+
+img:hover{
+    transform: scale(1.2) translateX(200px) translateY(20px) ;
+}

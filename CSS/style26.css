@@ -1,0 +1,189 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+}
+
+/*  pseudo selector, following things are neccessary to work
+    1. content
+    2. postition
+    3. width and height
+*/
+body::before    
+{
+    content: "";
+    position: absolute;
+    background: url(desktop-1920x1080.jpg) no-repeat center/cover;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+body::after
+{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* .container
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container video
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+} */
+
+.links
+{
+    width: 100vw;
+    background-color: #7c7c7b8a;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    font-size: 2em;
+}
+
+.links>a        /* Direct Child Selector */
+{
+    color: #080512;
+}
+
+form{
+    width: 50%;
+    height: 90vh;
+    background-color: #08051271;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 2em;
+    margin: 0 20px;
+    justify-content: space-around;
+    align-content: space-around;
+    border-radius: 50px;
+}
+
+form::before
+{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 90vh;
+    background: url(salad-2068220_1920.jpg) no-repeat center/cover;
+    z-index: -1;
+    border-radius: 50px;
+    opacity: 0.3;
+}
+.form-grp
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+}
+
+.form-grp input     /* Child Selector */
+{
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 1em;
+    font-size: 75%;
+}
+
+input[type="file"]      /* Specific Attribute Selector */
+{
+    font-size: 1em;
+    color: white;
+}
+
+input[placeholder]      /* General Attribute Selector i.e; target all the tags with attribute type */
+{
+    background-color: #6B4427;
+}
+
+input[type]:not(input[type="file"], input[type="submit"])      /* not() Pseudo Selector */
+{
+    color: white;
+}
+
+
+input::placeholder  /* Pseudo Selector */
+{
+    color: #7C7C7B;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+@media (max-width : 768px){
+    .links
+    {
+        font-size: 1.5em;
+    }
+
+    form
+    {
+        width: 75%;
+    }
+    
+    .form-grp
+    {
+        justify-content: center;
+    }
+
+    input[type = "file"]
+    {
+        font-size: .5em;
+    }
+    
+    input::placeholder  /* Pseudo Selector */
+    {
+        color: #7C7C7B;
+        text-align: center;
+        text-transform: capitalize;  
+        font-size: 70%;  
+    }
+}
+
+@media (max-height : 450px){
+    input
+    {
+        height: max-content;
+    }
+    
+    .form-grp
+    {
+        padding: 0px;
+    }
+    
+    .form-grp
+    {
+        width: 80%;
+    }
+}

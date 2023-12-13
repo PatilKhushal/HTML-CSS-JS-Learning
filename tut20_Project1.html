@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" href="CSS/style20.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="CSS/logo.png" alt="Logo">
+        </div>
+
+        <div class="mid">
+            <nav>
+                <ol>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ol>
+            </nav>
+        </div>
+        
+        <div class="right">
+            <input type="text" placeholder="Search for Food">
+        </div>
+    </header>
+    <main>
+        <h1>Fill the form to Apply for Head Chef...</h1>
+        <form action="noaction.php"> 
+            <!-- name, email, phone no., email, gender, resume, submit -->
+            <div class="form-group">
+                <input type="text" placeholder="enter your full name" required> 
+            </div>
+
+            <div class="form-group">
+                <input type="email" placeholder="enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <input type="text" pattern="[0-9]" placeholder="enter your mobile no." required>
+            </div>
+
+            <div class="form-group">
+                <input type="radio" checked required name="gender"><span>Male</span>
+                <input type="radio" name="gender"><span>Female</span>
+                <input type="radio" name="gender"><span>Others</span>
+            </div>
+
+            <div class="form-group file">
+                <span>Upload Resume</span>
+                <input type="file" required accept=".pdf">
+            </div>
+
+            <div class="form-group buttons">
+                <input type="submit">
+                <input type="reset">
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>

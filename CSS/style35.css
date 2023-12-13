@@ -1,0 +1,54 @@
+body
+{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.flex
+{
+    display: flex;
+}
+
+.container
+{
+    display: grid;
+    grid-template-areas: 'header header header header header ' 'nav section section section section' 'footer footer footer footer footer';
+    gap: 1em;
+}
+
+header
+{
+    display: grid;
+    grid-area: header;
+    grid-template-areas: 'h1 ul ul ul ul';
+}
+
+header h1
+{
+    grid-area: h1;
+}
+
+header ul
+{
+    display: grid;
+    grid-area: ul;
+    grid-template-areas: 'li li li li li';
+}
+
+section
+{
+    grid-area: section;
+}
+
+footer
+{
+    grid-area: footer;
+}
+
+.item
+{
+    border: 2px solid red;
+    background-color: burlywood;
+    padding: 2em
+}

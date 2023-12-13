@@ -1,0 +1,57 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #F18805;
+}
+
+.container
+{
+    font-family: cursive;
+    border: 8px #0E1428 solid;
+    margin : 20px;
+    border-radius: 10px;
+    padding: 50px;
+    font-size: 2em;
+}
+
+button
+{
+    font-size: 1.15em;
+    font-family: cursive;
+    color: #7B9E89;
+    background-color: #2A3741;
+    padding: 20px;
+    border-radius: 100px;
+}
+button:hover, a:hover
+{
+    color : #455959;
+}
+
+a
+{
+    color: #7B9E89;
+    padding: 20px;
+    border-radius: 100px;
+    background-color: #2A3741;
+    text-decoration: none;
+    border-width: 3px 3px;
+    border-color: #2A3741 black black #2A3741;
+    border-style: solid;
+    cursor : default;
+}
+
+a:visited
+{
+    color : #D95D39;
+}
+
+a:active
+{
+    border-color: black #2A3741 #2A3741  black ;
+}

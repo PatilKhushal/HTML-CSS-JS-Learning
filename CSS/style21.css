@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  background: url("academic-17470_1920.jpg") no-repeat center/cover;
+  color: white;
+  margin: 0px;
+}
+
+header {
+  background-color: #2a2208;
+  color: #d58936;
+  padding: 20px;
+  font-weight: bold;
+}
+
+header .left,
+header .right {
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  padding: 0 20px;
+}
+
+.left {
+  left: 2px;
+}
+
+.right {
+  right: 2px;
+}
+
+.left span {
+  padding: 0 20px;
+}
+
+.left .LBorder {
+  border-left: 2px solid purple;
+}
+
+.img-group img {
+  width: 20px;
+  filter: grayscale(1);
+  transform: rotateY(180deg);
+  transition: 500ms;
+}
+
+.img-group img:hover {
+  filter: grayscale(0);
+  transform: rotateY(0deg);
+}
+
+.img-group {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav .left,
+nav .right {
+  display: inline-block;
+  position: absolute;
+  top: 48px;
+  margin: 0 20px;
+}
+
+nav .mid {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+nav {
+  /* margin: 2px 0; */
+  padding: 20px;
+  background-color: #0d1821cb;
+}
+
+nav .left img {
+  width: 105px;
+}
+
+nav .mid ul li {
+  display: inline-block;
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  color: #fffffc;
+  background-color: #ff7f11;
+  padding: 10px 15px;
+  border-radius: 100px;
+  transition: 500ms;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #fffffc;
+  color: #ff7f11;
+}

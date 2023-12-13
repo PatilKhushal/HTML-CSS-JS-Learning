@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  color: #e3dbd8;
+  font-family: cursive;
+}
+
+body {
+  background: url("salad-2068220_1920.jpg");
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0px;
+  padding: 20px;
+  background-color: rgba(240, 255, 255, 0.336);
+}
+
+.left,
+.right {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+}
+
+.mid {
+  display: block;
+  width: 75%;
+  margin: auto;
+}
+
+.mid ol {
+  padding: 0;
+  width: 75%;
+  margin: auto;
+}
+.mid li {
+  display: inline-block;
+  padding: 1%;
+  margin: 0 5%;
+  border-radius: 100px;
+}
+
+.mid li a {
+  background-color: #e3dbd8;
+  color: #25160f;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.mid a:hover {
+  background-color: #25160f;
+  color: #e3dbd8;
+}
+
+.right {
+  right: 0px;
+  padding: 8px;
+}
+
+.right input {
+  border-radius: 10px;
+  padding: 0 5px;
+}
+
+.left {
+  top: 0px;
+}
+
+.left img {
+  width: 70px;
+}
+
+main {
+  display: inline-block;
+  width: 50%;
+  text-transform: capitalize;
+  margin: 100px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+}
+
+main h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.form-group {
+  /* color: #25160F; */
+  margin: 20px;
+  padding: 20px;
+}
+
+.form-group input {
+  display: block;
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.form-group input[type="submit"],
+.form-group input[type="reset"] {
+  background-color: #e3dbd8;
+  color: #25160f;
+  border-radius: 100px;
+  width: 49%;
+  display: inline-block;
+}
+
+.form-group input[type="submit"]:hover,
+.form-group input[type="reset"]:hover {
+  background-color: #25160f;
+  color: #e3dbd8;
+}
+
+.form-group input[type="radio"] {
+  background-color: #e3dbd8;
+  color: #25160f;
+  border-radius: 100px;
+}
+
+.form-group input[type="radio"],  .form-group span{
+    display: inline;
+    width: 25%;
+}
+
+.file
+{
+    text-align: center;
+}
+
+input[type = "file"]
+{
+    display: inline-block;
+    width: max-content;
+    margin: auto;
+}

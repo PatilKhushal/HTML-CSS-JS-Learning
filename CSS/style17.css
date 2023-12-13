@@ -1,0 +1,53 @@
+body
+{
+    background-color: #0E1428;
+    color: #7B9E89;
+    font-family: cursive;
+}
+
+nav
+{
+    background-color: black;
+    background-color: #1C2635;
+    overflow: auto;
+
+    border-radius: 100px;
+    color: #F18805;
+}
+
+ul 
+{
+    margin: 0;
+}
+
+li
+{
+    list-style: none;
+    float: left;
+    margin: 10px;
+}
+
+input[type = "text"]
+{
+    padding: 0 10px;
+    margin: 10px;
+    float: right;
+    border-radius: 10px;
+}
+
+a:hover
+{
+    color: #F0A202;
+    text-decoration: underline;
+}
+
+a
+{
+    color: #F18805;
+    text-decoration: none;
+}
+
+input[type = text]::placeholder
+{
+    font-family: cursive;
+}

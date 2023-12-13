@@ -1,0 +1,43 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: black;
+    color: antiquewhite;
+}
+
+.container
+{
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.item
+{
+    border: 2px solid green;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+#item3
+{
+    visibility: hidden;
+}
+
+#item1
+{
+    display: none;
+}
+
+#item5
+{
+    position: relative;
+    top : -120px;
+    left: 20px;
+    z-index: -1;
+}

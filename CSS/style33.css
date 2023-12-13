@@ -1,0 +1,43 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid white;
+    gap: 20px;
+}
+
+header, footer, section
+{
+    display: grid;
+    grid-column: 1/span 3;
+    border: 2px solid red;
+}
+
+header
+{
+    grid-template-columns: repeat(8, 1fr);
+    grid-row: 1/span 3;
+}
+
+header h1
+{
+    grid-column: 1/span 3;
+}
+
+header ul
+{
+    border: 2px solid blue;    
+    grid-column: 4/span 5;
+}

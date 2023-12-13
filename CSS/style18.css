@@ -1,0 +1,51 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #4C2E05;
+}
+
+header
+{
+    color: #95969D;
+    border : 2px #AEBD93 solid;
+    width : 1200px;
+    border-radius: 200px;
+    margin: auto;
+}
+
+header>h1
+{
+    margin : auto;
+    width: 50%;
+    text-align: center;
+}
+
+.container
+{
+    width : 1200px;
+    margin: auto;
+    background-color: green;
+}
+
+img 
+{
+    display: block;
+    width: 50px;
+    height: 50px;
+    clip-path: circle(50%);
+    margin: auto;
+    box-sizing: content-box;
+}
+
+.box
+{
+    background-color: #95969D;
+    border : 2px solid #AEBD93;
+    display: inline-block;
+    width : 33%;
+    margin: 20px 0;
+}

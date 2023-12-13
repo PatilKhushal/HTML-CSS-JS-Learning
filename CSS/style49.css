@@ -1,0 +1,33 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #280004;
+    color: #F0FFCE;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: center;
+}
+header
+{
+    margin-bottom: 50px;
+}
+
+.container table
+{
+    width: 100%;
+    text-align: center;
+}
+
+table th
+{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.container table, td, th
+{
+    border: 2px solid #4C230A;
+}

@@ -1,0 +1,39 @@
+body
+{
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.flex
+{
+    display: flex;
+}
+
+header
+{
+    justify-content: center;
+}
+
+header ul 
+{
+    list-style: none;
+    width: 50%;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+a
+{
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 450ms;
+}
+
+a:hover
+{
+    color: black;
+    background-color: white;
+}

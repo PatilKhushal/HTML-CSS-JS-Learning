@@ -1,0 +1,65 @@
+:root
+{
+    --clockWidth : 75%;
+    --clockHeight : 500px;
+
+    --boxWidthHeight : 100px;
+    --containerWidth : 20%;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body
+{
+    color: #17d4fe;
+    height: 100vh;
+    background: url("./clock.webp") no-repeat center center/cover;
+    font-size: 50px;
+
+}
+
+.clock
+{
+    width: var(--clockWidth);
+    height: var(--clockHeight);
+    margin: auto;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.856);
+    backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.box
+{
+    width: var(--boxWidthHeight);
+    height: var(--boxWidthHeight);
+    border: 2px solid #EAF4F4;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;    
+    transition: all ease 1s;
+    background-color: black;    
+}
+
+.container
+{
+    width: var(--containerWidth);
+    justify-content: space-evenly;
+    overflow: hidden;
+}
