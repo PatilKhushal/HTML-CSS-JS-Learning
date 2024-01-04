@@ -1,0 +1,94 @@
+:root
+{
+    --containerPadding : 0.5em;
+    --flexGap : 1em;
+    --cardWidth : 20%;
+    --buttonPadding : 0 2em;
+    --cardBorder : 1em;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.flex
+{
+    display: flex;
+    justify-content: center;
+}
+
+.container
+{
+    flex-wrap: wrap;
+    gap: var(--flexGap);
+    justify-content: space-evenly;
+}
+
+.card
+{
+    border: 2px solid red;
+    flex-direction: column;
+    width: var(--cardWidth);
+    border-radius: var(--cardBorder);
+
+}
+
+.image
+{
+    padding: var(--containerPadding);   
+}
+
+img
+{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: var(--cardBorder)    ;
+}
+
+.content
+{
+    padding: var(--containerPadding);
+    text-align: left;
+    flex-direction: column;
+    gap: var(--flexGap);
+    align-items: center;
+    color: gray;
+    
+}
+
+.content > h1
+{
+    color: black;
+    width: 100%;
+}
+
+.content > button
+{
+    width: max-content;
+    padding: 1em 2em;
+    border-radius: 50px;
+    border: none;
+    background-color: #b0bdca;
+    color: #1857a3;
+    font-weight: bold;
+}
+
+.tags
+{
+    width: 100%;
+    justify-content: start;
+    gap: var(--flexGap);
+    flex-wrap: wrap;
+}
+
+.tags > button
+{
+    padding: var(--buttonPadding);
+    border-radius: 50px;
+    border: none;
+    color: #9ea1a5;
+    background-color: #ffffff;
+    border: 2px solid #f3f3f3;
+}
